@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Signin-Signup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form action="" class="sign-in-form">
+                <h2 class="title">Sign in</h2>
+                <div class="input-field">
+                    <i class = "fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" class="password-input">
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>
+                
+                <div class="input-field">
+                    <i class="fas fa-robot"></i>
+                    <input type="text" placeholder="Enter captcha" id="captcha-input">
+                </div>
+                <div id="captcha-display" class="captcha-text"></div>
+
+                <input type="submit" value="Login" class="btn">
+                <p class="account-text">Dont have an account? <a href="#" id="sign-up-btn2" >Sign up</a></p>
+            </form>
+            <form action="" class="sign-up-form">
+                <h2 class="title">Sign up</h2>
+                <div class="input-field">
+                    <i class = "fas fa-user"></i>
+                    <input type="text" placeholder="Username">
+                </div><div class="input-field">
+                    <i class = "fas fa-envelope"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" class="password-input">
+                    <i class="fas fa-eye toggle-password"></i>
+                </div>                 
+               
+                <input type="submit" value="Sign up" class="btn">
+                <p class="account-text">Already have an account? <a href="#" id="sign-in-btn2" >Sign in</a></p>
+            </form>
+        </div>
+        <div class="panels-container">
+            <div class="panel left-panel">
+                <div class="content">
+                    <h3>Employee of Railway?</h3>
+                    <p>Lorem, ipsum.</p>
+                    <button class ="btn" id="sign-in-btn">Sign in</button>
+                </div>
+                <img src="rail.jpg" alt="" class="image">
+            </div>
+            <div class="panel right-panel">
+                <div class="content">
+                    <h3>New To Railway?</h3>
+                    <p>Lorem, ipsum.</p>
+                    <button class ="btn" id="sign-up-btn">Sign up</button>
+                </div>
+                <img src="rail.jpg" alt="" class="image">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>      
+    
+</body>
+</html>
